@@ -1,0 +1,75 @@
+@import "color";
+
+//TYPOGRAPHY
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1: 3.8rem !default;
+$font-size-h2: 2.6rem !default;
+$font-size-h3: 1.825rem !default;
+$font-size-h4: 1.3rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+$font-paragraph: 16px !default;
+$font-size-navbar: 16px !default;
+$font-size-small: 12px !default;
+
+$font-size-header: 16px !default;
+$font-size-header_search: 12px !default;
+$font-weight-header : 700 !default;
+
+$font-size-footer_info: 18px !default;
+
+$font-size-beranda: 20px;
+$font-size-content2: $font-size-beranda;
+
+$font-size-dropdown: 1.25rem;
+
+
+
+
+
+
+$wcb-font-family: 'Open Sans', sans-serif !default;
+$wcb-text-color-light:  $white !default;
+$wcb-text-color-light-hex: $white !default; // for contrast function in inverse
+$wcb-text-color-primary: unquote("rgba(#{$rgb-black}, 0.87)") !default;
+$wcb-text-color-primary-hex: $black !default; // for contrast function in inverse
+// $icon-color: rgba(0,0,0,0.5) !default;
+
+
+//OTHER
+  //a. Header
+  $logo-container-size: 300px;
+  $header-search-width: 248px;
+
+  //b.Button
+  $btn-mumtaaz-color: $yellow-600;
+  $btn-mumtaaz-hover: $yellow-400;
+
+  $btn-mumtaaz-font-color: $black;
+
+  //c.properties
+  $prop-radius: 36px;
+  $prop-card_radius: 6px;
+
+
+
+//COLOR
+  $header-main-color: $white;
+  $header-hover-bg_color: $grey-200;
+
+  $content-bg-white: $white;
+  $content-bg-striped: $grey-100;
+
+
+  $footer-main-color: $black;
+  $footer-text-color: $white;
+  $footer-text-hover: $blue-500;
+
+  $font-link_special-color: $blue-500;
+
+
+  $font-base-color: #000000;
+  $font-text-overlay: $white;

@@ -1,0 +1,11 @@
+textarea, input, button { outline: none; }
+
+
+
+
+//middle image reference https://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-a-div
+.middle-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

@@ -1,0 +1,63 @@
+@import "color";
+@import "variables";
+@import "mixins";
+
+
+%font-content-beranda{
+  font-size: $font-size-beranda;
+}
+%font-content2{
+  font-size: $font-size-content2;
+}
+
+//for a  attributes
+%non-decorated-link{
+  text-decoration:none;
+  color: inherit;
+}
+
+%disp-inline-block{
+  display: inline-block;
+}
+%height-100{
+  height: 100%;
+}
+%width-100{
+  width: 100%;
+}
+
+%input-border{
+  font-size:$font-size-header_search;
+  width: 90%;
+  height: 32px;
+  padding: 16px 18px;
+  border-radius: $prop-radius;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 2px solid $grey-600;
+  &:focus{
+    border: 2px solid $blue-400;
+    box-sizing: border-box;
+    // transition: 200ms ease all;
+
+    // @include box-shadow(1);
+  }
+}
+
+%base-font{
+  font-family: $wcb-font-family;
+}
+
+%header-items{
+  height: 100%;
+  vertical-align:top;
+}
+%header-items-link{
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 25px;
+}
+
+%vertical-align-antipush{
+  vertical-align: top;
+}

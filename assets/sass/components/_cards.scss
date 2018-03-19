@@ -1,0 +1,54 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+.card-wcb {
+  border-radius: $prop-card_radius;
+  @include box-shadow(2);
+
+  //atribut asli card
+  position: relative;
+  @include disp-flex;
+  min-width: 0;
+  padding: 5%;
+  font-size: 16px;
+  word-break: break-word;
+  hyphens:auto; //striep untuk lanjut kata
+
+  justify-content: flex-start;
+  background-color: #fff;
+  align-items: center;
+  // align-content: flex-start;
+  // text-align: left;
+  cursor: pointer;
+  .card-icon {
+    flex: 1 4 30%;
+    // max-height: 100px;
+    max-width: 120px;
+    height: 100px;
+    img{
+      display: block;
+      max-width: 120px;
+      max-height: 100px;
+      margin: 0 auto;
+
+    }
+  }
+  .card-desc-left, .card-desc-right {
+    flex: 5 4 70%;
+    p{
+      margin: 0;
+    }
+  }
+
+  .card-desc-left {
+    padding-right: 4%;
+    text-align: right;
+
+  }
+  .card-desc-right {
+    padding-left: 4%;
+    text-align: left;
+
+  }
+}

@@ -1,0 +1,124 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+* {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -ms-transition:     all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+}
+body, html {
+    height: 100%;
+    @extend %base-font;
+    font-size: $font-size-base;
+    // transition: 2000ms ease all;
+}
+
+h1{
+  font-size: $font-size-h1;
+}
+h2{
+  font-size: $font-size-h2;
+}
+h3{
+  font-size: $font-size-h3;
+}
+h4{
+  font-size: $font-size-h4;
+}
+h5{
+  font-size: $font-size-h5;
+}
+h6{
+  font-size: $font-size-h6;
+}
+
+a{
+  @extend %non-decorated-link;
+  &:hover{
+    @extend %non-decorated-link;
+  }
+}
+.container-wcb{
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#section-top{
+  // margin-top: 84px;
+}
+.section-no_full_page_no_bg{
+  // @extend %height-100;
+  overflow: hidden; //prevent child from pushing outer elements ref
+  background-color: $content-bg-white;
+  // position: static;
+  padding: 30px 0 80px;
+}
+.bg-striped{
+  background-color: $content-bg-striped;
+}
+.section-full_page_bg{
+  @extend %height-100;
+  position: relative;
+
+  //more in pages/_beranda.scss
+
+  // centering text vertically and horizontally ref : https://stackoverflow.com/questions/19184052/center-align-with-table-cell
+  .overlay{
+    position: absolute; //important for filter
+    @extend %height-100;
+    @extend %width-100;
+    padding: 10px;
+    display: table;
+    z-index: -2;
+    .overlay-text{
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      .overlay-text-content{
+        display: inline-block;
+        width: 50%;
+        line-height: 1.25;
+      }
+      .overlay-text-judul{
+        color: $font-text-overlay;
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.section-heading{
+  margin: 20px 0 20px;
+  position: static;
+  h1, h2, h3, h4, h5, h6, p{
+    font-weight: bolder;
+  }
+}
+
+
+.no-padding{
+  padding:0;
+}
+
+.no-margin{
+  margin:0;
+}
+
+.icons-dropdown{
+  @include bg-img('../img/icons/icons-dropdown.png');
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  border: none !important;
+  vertical-align: -5%;
+  margin-left: 4px;
+  // background: transparent !important
+  // background-color: #000;
+  transition: 400ms ease all;
+  transform: rotate(360deg);
+}

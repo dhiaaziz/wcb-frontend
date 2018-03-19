@@ -1,0 +1,124 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+#header{
+  font-size: $font-size-header;
+  font-weight: $font-weight-header;
+  background-color: $header-main-color;
+  line-height: 1.5;
+  color: $font-base-color;
+  width: 100%;
+  height: 84px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  @include box-shadow(3);
+    .header-main{
+      position: relative;
+      height: 100%;
+      div:not(.dropdown-content){
+        display: inline-block;
+        height: 100%;
+        box-sizing: content-box;
+      }
+      .box-left{
+        width: $logo-container-size;
+        padding-left: 20px;
+        @extend %vertical-align-antipush;
+        .logo-company-container{
+          position:relative;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+          img{
+            vertical-align: middle;
+            max-height: 39px;
+            max-width: 100%;
+          }
+        }
+      }
+
+      .box-right{
+        position:relative;
+        display: inline-block;
+        @extend %vertical-align-antipush;
+        @include box_sisa_widthcalc($logo-container-size,'-',20px);
+        .items-container-right{
+          float: right;
+          // text-align: center;
+          height: 100%;
+          max-width: 100%;
+          // overflow-x:hidden;
+          div:not(.dropdown-content){
+            @extend %header-items;
+            input{
+              position: relative;
+              top: 28%;
+            }
+
+          }
+          .header-items-link{
+            @extend %header-items;
+            @extend %header-items-link;
+            cursor: pointer;
+            p, span{
+              position: relative;
+              top: 36%;
+            }
+            &:hover{
+              background-color: $header-hover-bg_color;
+              .icons-dropdown{
+                transform: rotate(180deg);
+                transition: 200ms ease all;
+              }
+            }
+          }
+          .form-control-header{
+            width: $header-search-width;
+            margin-left: 5px;
+          }
+
+        }
+      }
+    }
+
+}
+
+input.bordered-circle{
+  @extend %input-border ;
+}
+.dropdown-wcb {
+    position: relative;
+    display: inline-block;
+    &:hover{
+      .dropdown-content {
+          display: block ;
+      }
+    }
+
+}
+
+.dropdown-content {
+    display: none ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $header-main-color;
+    width: 100%;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    font-weight: 100;
+    font-size: $font-size-dropdown;
+    a{
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      &:hover{
+        background-color: $header-hover-bg_color;
+
+      }
+    }
+}

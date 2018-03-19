@@ -1,0 +1,26 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+.btn-mumtaaz{
+  color: $btn-mumtaaz-font-color;
+  background-color: $btn-mumtaaz-color;
+  border-color: $btn-mumtaaz-color;
+  @include box-shadow(1);
+  &:hover{
+    background-color: $btn-mumtaaz-hover;
+    border-color: $btn-mumtaaz-hover;
+    // color: $white;
+    @include box-shadow(2);
+  }
+}
+
+.btn-size-mumtaaz{
+  padding: 1rem;
+  font-size: 1.45rem;
+  line-height: 1.5;
+}
+
+.btn-circled{
+  border-radius: $prop-radius;
+}
