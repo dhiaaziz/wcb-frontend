@@ -880,4 +880,83 @@ body, html {
   margin: 10px;
 }
 
+/* line 77, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer {
+  background-color: #ffffff;
+  padding: 50px 0 30px;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+/* line 83, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .footer-main_heading {
+  font-weight: bold;
+}
+
+/* line 86, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer img {
+  max-width: 500px;
+  margin: 80px 0;
+}
+
+/* line 90, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .section-footer {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* line 93, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .section-footer h1, #beranda-footer .section-footer h2, #beranda-footer .section-footer h3, #beranda-footer .section-footer h4, #beranda-footer .section-footer h5, #beranda-footer .section-footer h6 {
+  margin-bottom: 20px;
+}
+
+/* line 98, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer li {
+  list-style: none;
+  display: inline;
+}
+
+/* line 101, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer li::after {
+  content: '|';
+  margin-left: 4px;
+}
+
+/* line 105, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer li:last-child:after {
+  content: '';
+}
+
+/* line 110, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer a:hover {
+  color: #2196f3;
+}
+
+/* line 114, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .kantor-perwakilan {
+  width: 50%;
+}
+
+/* line 118, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .footer-separator {
+  margin: 50px auto 30px;
+  width: 20%;
+  border-bottom: 1px solid black;
+}
+
+/* line 124, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .footer-copyright {
+  margin-top: 70px;
+}
+
+/* line 126, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .footer-copyright p {
+  margin-bottom: 5px;
+}
+
+/* line 130, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+#beranda-footer .link-developer {
+  color: #2196f3;
+}
+
 /*# sourceMappingURL=../css/main-style.map */

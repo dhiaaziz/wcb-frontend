@@ -73,3 +73,63 @@
   margin: 10px;
   // display: inline-block;
 }
+
+#beranda-footer{
+  background-color: $content-bg-white;
+  padding: 50px 0 30px;
+  text-align: center;
+  font-size: 1.15rem;
+
+  .footer-main_heading{
+    font-weight: bold;
+  }
+  img{
+    max-width: 500px;
+    margin: 80px 0;
+  }
+  .section-footer{
+    width: 40%;
+    margin: 0 auto;
+    h1, h2, h3, h4, h5, h6{
+      margin-bottom: 20px;
+    }
+
+  }
+  li{
+    list-style: none;
+    display: inline;
+    &::after{
+      content: '|';
+      margin-left: 4px;
+    }
+    &:last-child:after{
+      content: '';
+    }
+  }
+  a{
+    &:hover{
+      color: $font-link_special-color;
+    }
+  }
+  .kantor-perwakilan{
+    width: 50%;
+  }
+
+  .footer-separator{
+    margin: 50px auto 30px;
+    width: 20%;
+    border-bottom: 1px solid black;
+  }
+
+  .footer-copyright{
+    margin-top: 70px;
+    p{
+      margin-bottom: 5px;
+    }
+  }
+  .link-developer{
+    color: $font-link_special-color;
+
+  }
+
+}
