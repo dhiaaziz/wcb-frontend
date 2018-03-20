@@ -1,0 +1,18 @@
+.section-kontak{
+  .overlay{
+    .overlay-text{
+      .overlay-text-container{
+        bottom: 40%;
+      }
+    }
+  }
+
+}
+
+//css filter only background not the content ref : https://stackoverflow.com/questions/20411257/css-blur-on-background-image-but-not-on-content/20411343
+.kontak-the-background{
+  @include bg-img('../img/aswan/kontak.jpg',$size: cover, $position:60% 60%);
+  // -webkit-filter: opacity(30%); /* Safari */
+  filter: brightness(70%);
+  // filter: opacity(70%);
+}

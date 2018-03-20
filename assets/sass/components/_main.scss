@@ -42,8 +42,7 @@ a{
 }
 .container-wcb{
   width: 100%;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding: 0 5%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -61,21 +60,28 @@ a{
 .bg-striped{
   background-color: $content-bg-striped;
 }
+.section-no_full_page_bg{
+  height: 50%;
+  position: relative;
+  //more in pages/_pages.scss
+}
+
 .section-full_page_bg{
   @extend %height-100;
   position: relative;
+    //more in pages/_beranda.scss
+}
 
-  //more in pages/_beranda.scss
+.section-full_page_bg, .section-no_full_page_bg{
+  .the-background{
+    @extend %the-background-layout;
+  }
 
   // centering text vertically and horizontally ref : https://stackoverflow.com/questions/19184052/center-align-with-table-cell
   .overlay{
-    position: absolute; //important for filter
-    @extend %height-100;
-    @extend %width-100;
-    padding: 10px;
-    display: table;
-    z-index: -2;
-    .overlay-text{
+    color: $font-text-overlay;
+    @extend %overlay-layout;
+    .overlay-text-center{
       display: table-cell;
       text-align: center;
       vertical-align: middle;
@@ -85,8 +91,33 @@ a{
         line-height: 1.25;
       }
       .overlay-text-judul{
-        color: $font-text-overlay;
         font-size: 4rem;
+      }
+    }
+
+    .overlay-text{
+      // color: $font-text-overlay;
+      display: table-cell;
+      // text-align: center;
+      vertical-align: bottom;
+      .overlay-text-container{
+        position: absolute;
+        bottom: 22%;
+        left: 5%;
+
+        .overlay-text-judul{
+          color: $font-text-overlay;
+          font-size: 3.25rem;
+
+        }
+        h1, h2 ,h3 ,h4, h5 ,h6{
+          margin: 0;
+        }
+        .breadcrumb-wcb{
+          font-size: 1.35rem;
+          margin-top: 10px;
+          font-weight: 300;
+        }
       }
     }
   }
@@ -121,4 +152,15 @@ a{
   // background-color: #000;
   transition: 400ms ease all;
   transform: rotate(360deg);
+}
+
+.content-box{
+  font-size: $font-size-content-box;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 20px 0 0 0;
+  p:not(:last-child){
+    margin-bottom: 40px;
+  }
 }

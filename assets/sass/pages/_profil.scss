@@ -1,0 +1,7 @@
+//css filter only background not the content ref : https://stackoverflow.com/questions/20411257/css-blur-on-background-image-but-not-on-content/20411343
+.profil-the-background{
+  @include bg-img('../img/profil.jpg',$size: cover, $position:50% 50%);
+  // -webkit-filter: opacity(30%); /* Safari */
+  filter: brightness(40%);
+  // filter: opacity(70%);
+}
