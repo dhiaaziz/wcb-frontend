@@ -15,6 +15,11 @@ body, html {
     // transition: 2000ms ease all;
 }
 
+button:focus {outline:0;}
+button{
+  cursor: pointer;
+}
+
 h1{
   font-size: $font-size-h1;
 }
@@ -38,6 +43,7 @@ a{
   @extend %non-decorated-link;
   &:hover{
     @extend %non-decorated-link;
+    color: $link-hover-color;
   }
 }
 .container-wcb{
@@ -50,6 +56,18 @@ a{
 #section-top{
   // margin-top: 84px;
 }
+
+#section-top-pushed{
+  margin-top: 84px;
+}
+
+.breadcrumb-wcb{
+  font-size: 1.35rem;
+  margin-top: 20px;
+  font-weight: 300;
+  color: $breadcrumb-font-color;
+}
+
 .section-no_full_page_no_bg{
   // @extend %height-100;
   overflow: hidden; //prevent child from pushing outer elements ref
@@ -114,9 +132,9 @@ a{
           margin: 0;
         }
         .breadcrumb-wcb{
-          font-size: 1.35rem;
+          color: inherit;
           margin-top: 10px;
-          font-weight: 300;
+
         }
       }
     }
@@ -129,6 +147,9 @@ a{
   h1, h2, h3, h4, h5, h6, p{
     font-weight: bolder;
   }
+}
+.section-content{
+  margin: 60px 0 0;
 }
 
 

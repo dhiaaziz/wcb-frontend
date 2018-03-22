@@ -8,10 +8,7 @@
   border-color: $btn-mumtaaz-color;
   @include box-shadow(1);
   &:hover{
-    background-color: $btn-mumtaaz-hover;
-    border-color: $btn-mumtaaz-hover;
-    // color: $white;
-    @include box-shadow(2);
+    @extend %btn-mumtaaz-active_n_hover;
   }
 }
 

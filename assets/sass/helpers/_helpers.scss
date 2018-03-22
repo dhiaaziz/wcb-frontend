@@ -76,3 +76,10 @@
   width: 100%;
   display: table;
 }
+
+%btn-mumtaaz-active_n_hover{
+  background-color: $btn-mumtaaz-hover;
+  border-color: $btn-mumtaaz-hover;
+  color: $link-hover-color;
+  @include box-shadow(2);
+}

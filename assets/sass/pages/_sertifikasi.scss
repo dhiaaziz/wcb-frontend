@@ -1,0 +1,57 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+ul.certification-list{
+  // background-color: rgb(10, 78, 89);
+  list-style-type: none;
+  padding: 0;
+  li:not(:last-child){
+    border-bottom: $border-box-person;
+    margin-bottom: 40px;
+  }
+}
+.box-person{
+  // background-color: rgb(104, 62, 252);
+  margin:0 5%;
+  @include disp-flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  .person-photo{
+    // flex-basis: 12%;
+    flex-grow: 1;
+    max-width: 12%;
+    min-height: 100px;
+    max-height: 180px;
+    img{
+      // max-width: 100%;
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+
+      // min-width: 100px;
+    }
+  }
+  .person-namekta{
+    flex-basis: 30%;
+    margin-left: 20px;
+    @include disp-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p:last-child{
+      margin: 0;
+    }
+
+  }
+  .person-certification{
+    flex-basis: 60%;
+    p:not(.box_attr-head){
+      margin: 0;
+    }
+  }
+  .box_attr-head{
+    font-weight: bolder;
+  }
+
+}
