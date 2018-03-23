@@ -908,6 +908,11 @@ body, html {
   text-align: left;
 }
 
+/* line 54, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+.card-wcb:hover {
+  background-color: #eeeeee;
+}
+
 /* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .beranda-content-text {
   font-size: 20px;

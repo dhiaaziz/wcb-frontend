@@ -51,4 +51,7 @@
     text-align: left;
 
   }
+  &:hover{
+    background-color: $card-color-hover;
+  }
 }

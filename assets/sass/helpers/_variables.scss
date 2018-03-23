@@ -59,6 +59,9 @@ $wcb-text-color-primary-hex: $black !default; // for contrast function in invers
   $prop-radius: 36px;
   $prop-card_radius: 6px;
 
+  // cards
+  $card-color-hover: $grey-200;
+
   //.sertifikasi
   $border-box-person: 1px solid $grey-300;
   $border-mumtaz : $border-box-person;
