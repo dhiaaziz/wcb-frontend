@@ -51,6 +51,10 @@ $wcb-text-color-primary-hex: $black !default; // for contrast function in invers
 
   $btn-mumtaaz-font-color: $black;
 
+  //inputs
+  $input-placeholder-color: $grey-400;
+  $input-border-focus: 2px solid $yellow-600;
+
   //c.properties
   $prop-radius: 36px;
   $prop-card_radius: 6px;
@@ -58,7 +62,7 @@ $wcb-text-color-primary-hex: $black !default; // for contrast function in invers
   //.sertifikasi
   $border-box-person: 1px solid $grey-300;
   $border-mumtaz : $border-box-person;
-  
+
 
 
 

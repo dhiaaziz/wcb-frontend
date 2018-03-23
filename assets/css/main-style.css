@@ -1167,6 +1167,122 @@ body, html {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
+.form-group-mumtaaz {
+  display: block;
+  width: 100%;
+  font-size: 1.15rem;
+  margin: 20px 0;
+  box-sizing: border-box;
+  height: 36px;
+}
+
+/* line 13, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
+.form-group-mumtaaz input.form-mumtaaz-control {
+  box-sizing: border-box;
+  -webkit-transition: border-color 200ms ease-out;
+  -moz-transition: border-color 200ms ease-out;
+  -o-transition: border-color 200ms ease-out;
+  transition: border-color 200ms ease-out;
+  border: 0;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding: 5px;
+  font-weight: lighter;
+}
+
+/* line 26, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
+.form-group-mumtaaz input.form-mumtaaz-control::placeholder {
+  color: #bdbdbd;
+}
+
+/* line 30, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
+.form-group-mumtaaz input.form-mumtaaz-control:focus {
+  border-bottom: 2px solid #fdd835;
+}
+
+/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.beranda-content-text {
+  font-size: 20px;
+}
+
+/* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 22, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.section-full_page_bg, .beranda-background-container {
+  height: 100%;
+}
+
+/* line 29, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+input.bordered-circle {
+  font-size: 12px;
+  width: 90%;
+  height: 32px;
+  padding: 16px 18px;
+  border-radius: 36px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 2px solid #757575;
+}
+
+/* line 38, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+input.bordered-circle:focus {
+  border: 2px solid #42a5f5;
+  box-sizing: border-box;
+}
+
+/* line 47, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+body, html {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 51, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+#header .header-main .box-right .items-container-right div:not(.dropdown-content), #header .header-main .box-right .items-container-right .header-items-link {
+  height: 100%;
+  vertical-align: top;
+}
+
+/* line 55, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+#header .header-main .box-right .items-container-right .header-items-link {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 25px;
+}
+
+/* line 61, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+#header .header-main .box-left, #header .header-main .box-right {
+  vertical-align: top;
+}
+
+/* line 65, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.section-full_page_bg .the-background, .section-no_full_page_bg .the-background {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 72, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.section-full_page_bg .overlay, .section-no_full_page_bg .overlay {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+/* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
+  background-color: #ffee58;
+  border-color: #ffee58;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 /* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .beranda-background-container {
   background-image: url("../img/profil.jpg");
