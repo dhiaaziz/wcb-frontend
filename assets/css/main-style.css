@@ -74,9 +74,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -293,9 +292,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -448,9 +446,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -746,17 +743,16 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* line 5, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_buttons.scss */
 .btn-mumtaaz {
   color: #000000;
-  background-color: #fdd835;
-  border-color: #fdd835;
+  background-color: #fec60a;
+  border-color: #fec60a;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -848,9 +844,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -989,9 +984,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1161,9 +1155,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1172,13 +1165,13 @@ body, html {
   display: block;
   width: 100%;
   font-size: 1.15rem;
-  margin: 20px 0;
+  margin: 18px 0;
   box-sizing: border-box;
-  height: 36px;
+  height: 32px;
 }
 
 /* line 13, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
-.form-group-mumtaaz input.form-mumtaaz-control {
+.form-group-mumtaaz input.form-mumtaaz-control, .form-group-mumtaaz textarea.form-mumtaaz-control {
   box-sizing: border-box;
   -webkit-transition: border-color 200ms ease-out;
   -moz-transition: border-color 200ms ease-out;
@@ -1192,13 +1185,18 @@ body, html {
 }
 
 /* line 26, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
-.form-group-mumtaaz input.form-mumtaaz-control::placeholder {
+.form-group-mumtaaz input.form-mumtaaz-control::placeholder, .form-group-mumtaaz textarea.form-mumtaaz-control::placeholder {
   color: #bdbdbd;
 }
 
 /* line 30, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
-.form-group-mumtaaz input.form-mumtaaz-control:focus {
+.form-group-mumtaaz input.form-mumtaaz-control:focus, .form-group-mumtaaz textarea.form-mumtaaz-control:focus {
   border-bottom: 2px solid #fdd835;
+}
+
+/* line 35, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
+.form-group-mumtaaz textarea.form-mumtaaz-control {
+  height: 72px;
 }
 
 /* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -1277,9 +1275,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1513,9 +1510,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1607,9 +1603,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1628,6 +1623,12 @@ body, html {
   background-size: cover;
   background-origin: content-box;
   filter: brightness(70%);
+}
+
+/* line 24, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_kontak.scss */
+.kontak-button-overlap {
+  position: absolute;
+  bottom: -132px;
 }
 
 /* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -1706,9 +1707,8 @@ body, html {
 
 /* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
-  background-color: #ffee58;
-  border-color: #ffee58;
-  color: #ffffff;
+  background-color: #fdd835;
+  border-color: #fdd835;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -1785,6 +1785,138 @@ ul.certification-list li:not(:last-child) {
 /* line 53, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_sertifikasi.scss */
 .box-person .box_attr-head {
   font-weight: bolder;
+}
+
+/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.beranda-content-text {
+  font-size: 20px;
+}
+
+/* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 22, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.section-full_page_bg, .beranda-background-container {
+  height: 100%;
+}
+
+/* line 29, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+input.bordered-circle {
+  font-size: 12px;
+  width: 90%;
+  height: 32px;
+  padding: 16px 18px;
+  border-radius: 36px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: 2px solid #757575;
+}
+
+/* line 38, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+input.bordered-circle:focus {
+  border: 2px solid #42a5f5;
+  box-sizing: border-box;
+}
+
+/* line 47, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+body, html {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 51, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+#header .header-main .box-right .items-container-right div:not(.dropdown-content), #header .header-main .box-right .items-container-right .header-items-link {
+  height: 100%;
+  vertical-align: top;
+}
+
+/* line 55, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+#header .header-main .box-right .items-container-right .header-items-link {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 25px;
+}
+
+/* line 61, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+#header .header-main .box-left, #header .header-main .box-right {
+  vertical-align: top;
+}
+
+/* line 65, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.section-full_page_bg .the-background, .section-no_full_page_bg .the-background {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 72, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.section-full_page_bg .overlay, .section-no_full_page_bg .overlay {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+/* line 80, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
+.btn-mumtaaz:hover, .accordion-wcb-container .accordion-box button.active {
+  background-color: #fdd835;
+  border-color: #fdd835;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 5, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_lingkup.scss */
+.lingkup-container {
+  margin-bottom: 60px;
+  font-size: 1.35rem;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -ms-flex-pack: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_lingkup.scss */
+.lingkup-container .lingkup-box-img {
+  flex-basis: 15%;
+}
+
+/* line 17, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_lingkup.scss */
+.lingkup-container .lingkup-box-img img {
+  width: 50%;
+}
+
+/* line 24, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_lingkup.scss */
+.lingkup-container .lingkup-box-description {
+  flex-basis: 85%;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* line 28, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_lingkup.scss */
+.lingkup-container .lingkup-box-description p {
+  margin-bottom: 0.5rem;
+}
+
+/* line 31, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_lingkup.scss */
+.lingkup-container .lingkup-box-description h1, .lingkup-container .lingkup-box-description h2, .lingkup-container .lingkup-box-description h3, .lingkup-container .lingkup-box-description h4, .lingkup-container .lingkup-box-description h5, .lingkup-container .lingkup-box-description h6 {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+/* line 38, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_lingkup.scss */
+.lingkup-container.lingkup-last {
+  margin: 0;
 }
 
 /*# sourceMappingURL=../css/main-style.map */

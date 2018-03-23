@@ -7,10 +7,10 @@
   display: block;
   width: 100%;
   font-size: 1.15rem;
-  margin: 20px 0;
+  margin: 18px 0;
   box-sizing: border-box;
-  height: 36px;
-  input.form-mumtaaz-control{
+  height: 32px;
+  input.form-mumtaaz-control, textarea.form-mumtaaz-control{
     box-sizing: border-box;
     -webkit-transition : border-color 200ms ease-out;
     -moz-transition : border-color 200ms ease-out;
@@ -31,6 +31,9 @@
       border-bottom: $input-border-focus;
     }
 
+  }
+  textarea.form-mumtaaz-control{
+    height: 72px;
   }
 
 }

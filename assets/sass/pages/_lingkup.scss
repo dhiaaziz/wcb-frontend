@@ -1,0 +1,40 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+.lingkup-container{
+  margin-bottom: 60px;
+  font-size: 1.35rem;
+  @include disp-flex;
+  -ms-flex-pack: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  align-items: flex-start;
+  .lingkup-box-img{
+    flex-basis: 15%;
+    // max-height: 100px;
+    img{
+      // max-height: 50%;
+      // max-height: 100px;
+      width: 50%;
+
+    }
+  }
+  .lingkup-box-description{
+    flex-basis: 85%;
+    line-height: 1.8;
+    text-align: justify;
+    p{
+      margin-bottom: 0.5rem;
+    }
+    h1, h2, h3, h4, h5, h6{
+      line-height: 1.5;
+      margin-bottom: 20px;
+      font-weight: bolder;
+    }
+  }
+}
+.lingkup-container.lingkup-last{
+  margin: 0;
+}
