@@ -1,0 +1,15 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+.container-struktur{
+  display: block;
+  // margin: 0 auto;
+  img.img-strukur-organisasi{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

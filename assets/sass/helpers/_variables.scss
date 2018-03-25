@@ -65,6 +65,8 @@ $wcb-text-color-primary-hex: $black !default; // for contrast function in invers
   //.sertifikasi
   $border-box-person: 1px solid $grey-300;
   $border-mumtaz : $border-box-person;
+  $border-mumtaz-bold : 2px solid $grey-300;
+
 
 
 
@@ -87,3 +89,7 @@ $wcb-text-color-primary-hex: $black !default; // for contrast function in invers
   $font-base-color: #000000;
   $font-text-overlay: $white;
   $link-hover-color: $white;
+
+  $table-header-color: $blue-A400;
+
+  $border-bottom-shadow:;
