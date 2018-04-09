@@ -1,0 +1,21 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/helpers";
+
+.container-galeri{
+  .box-img{
+    display: block;
+    height: 300px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 15px;
+    img{
+      @include box-shadow(3);
+      object-fit: cover;
+      width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+  }
+}

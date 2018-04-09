@@ -44,6 +44,8 @@
       // border-bottom:  $border-mumtaz;
       border-left:  $border-mumtaz;
       border-right:  $border-mumtaz;
+      border-bottom:  $border-mumtaz;
+      
       table{
         //biar full
         width: 100.1%;
@@ -74,7 +76,21 @@
           padding-left: 70px;
         }
       }
-
+      ol.accordion-ol{
+        padding-top: 20px;
+        li{
+          padding: 15px;
+          &:first-child{
+            padding-top: 0;
+          }
+          &:last-child{
+          }
+        }
+      }
+      a{
+        color: $font-link_special-color;
+        text-decoration: underline;
+      }
     }
   }
 }
