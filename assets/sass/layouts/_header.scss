@@ -46,10 +46,13 @@
         @include box_sisa_widthcalc($logo-container-size,'-',20px);
         .items-container-right{
           float: right;
-          // text-align: center;
           height: 100%;
-          max-width: 100%;
+          width: 95%;
           // overflow-x:hidden;
+
+          @include disp-flex;
+          justify-content: space-between;
+          align-items: center;
           div:not(.dropdown-content){
             @extend %header-items;
             input{
@@ -59,9 +62,15 @@
 
           }
           .header-items-link{
+            text-align: center;
+            // flex-basis: 200px;
+            flex-grow: 1;
             @extend %header-items;
             @extend %header-items-link;
             cursor: pointer;
+            &.dropdown-wcb{
+              // flex-grow: 3;
+            }
             p, span{
               position: relative;
               top: 36%;
@@ -100,7 +109,8 @@ input.bordered-circle{
 }
 
 .dropdown-content {
-    display: none ;
+    text-align: left;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
