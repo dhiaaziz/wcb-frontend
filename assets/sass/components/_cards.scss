@@ -3,7 +3,42 @@
 @import "../helpers/helpers";
 
 
-
+.card-partner{
+  // padding-top:5%;
+  border-radius: $prop-card_radius;
+  @include box-shadow(2);
+  margin-bottom: 30px;
+  .card-img{
+    padding: 10% 10% 5%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    img{
+      display: block;
+      height: 100%;
+      object-position: 10% 50%;
+      object-fit: cover;
+      width: 80%;
+      max-height: 100%;
+      margin: auto;
+      vertical-align: middle;
+    }
+  }
+  .partner-name{
+    font-size: 2rem;
+    margin-bottom: 5%;
+    font-weight: bolder;
+  }
+  .partner-desc{
+    font-size: 1.25rem;
+  }
+  .card-content{
+    padding: 0% 10% 10%;
+    font-size: 1.15rem;
+  }
+  font-size: 1.15rem;
+}
 .card-wcb-vertical{
   border-radius: $prop-card_radius;
   @include box-shadow(2);

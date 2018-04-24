@@ -358,16 +358,21 @@ body, html {
 }
 
 /* line 40, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_footer.scss */
+#footer ul {
+  margin-bottom: 20px;
+}
+
+/* line 43, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_footer.scss */
 #footer li {
   list-style-type: none;
 }
 
-/* line 44, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_footer.scss */
+/* line 47, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_footer.scss */
 #footer .row {
   margin: 0;
 }
 
-/* line 48, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_footer.scss */
+/* line 51, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_footer.scss */
 #footer .footer-copyright {
   margin-top: 60px;
   text-align: center;
@@ -682,6 +687,11 @@ a:hover {
   margin-bottom: 40px;
 }
 
+/* line 188, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_main.scss */
+.text-grey {
+  color: #bdbdbd;
+}
+
 /* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 .beranda-content-text {
   font-size: 20px;
@@ -866,7 +876,56 @@ body, html {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* line 7, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+.card-partner {
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 30px;
+  font-size: 1.15rem;
+}
+
+/* line 11, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+.card-partner .card-img {
+  padding: 10% 10% 5%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+/* line 17, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+.card-partner .card-img img {
+  display: block;
+  height: 100%;
+  object-position: 10% 50%;
+  object-fit: cover;
+  width: 80%;
+  max-height: 100%;
+  margin: auto;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+.card-partner .partner-name {
+  font-size: 2rem;
+  margin-bottom: 5%;
+  font-weight: bolder;
+}
+
+/* line 33, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+.card-partner .partner-desc {
+  font-size: 1.25rem;
+}
+
+/* line 36, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+.card-partner .card-content {
+  padding: 0% 10% 10%;
+  font-size: 1.15rem;
+}
+
+/* line 42, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical {
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -876,7 +935,7 @@ body, html {
   font-size: 1.25rem;
 }
 
-/* line 13, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 48, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical .card-img {
   margin-bottom: 20px;
   height: 242px;
@@ -885,7 +944,7 @@ body, html {
   margin-right: auto;
 }
 
-/* line 20, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 55, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical .card-img img {
   display: inline-block;
   height: 100%;
@@ -897,35 +956,35 @@ body, html {
   vertical-align: middle;
 }
 
-/* line 31, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 66, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical .card-desc {
   margin-left: 10%;
   padding: 0 3%;
   margin-bottom: 30px;
 }
 
-/* line 36, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 71, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical .card-info {
   padding: 0 3% 5%;
 }
 
-/* line 39, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 74, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical .card-info i, .card-wcb-vertical .card-info p {
   display: inline;
   vertical-align: middle;
 }
 
-/* line 43, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 78, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical .card-info p {
   margin-left: 3%;
 }
 
-/* line 46, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 81, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb-vertical .card-info i {
   color: #bdbdbd;
 }
 
-/* line 52, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 87, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb {
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -949,14 +1008,14 @@ body, html {
   cursor: pointer;
 }
 
-/* line 71, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 106, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb .card-icon {
   flex: 1 4 30%;
   max-width: 120px;
   height: 100px;
 }
 
-/* line 76, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 111, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb .card-icon img {
   display: block;
   max-width: 120px;
@@ -964,29 +1023,29 @@ body, html {
   margin: 0 auto;
 }
 
-/* line 84, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 119, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb .card-desc-left, .card-wcb .card-desc-right {
   flex: 5 4 70%;
 }
 
-/* line 86, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 121, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb .card-desc-left p, .card-wcb .card-desc-right p {
   margin: 0;
 }
 
-/* line 91, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 126, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb .card-desc-left {
   padding-right: 4%;
   text-align: right;
 }
 
-/* line 96, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 131, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb .card-desc-right {
   padding-left: 4%;
   text-align: left;
 }
 
-/* line 101, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
+/* line 136, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_cards.scss */
 .card-wcb:hover {
   background-color: #eeeeee;
 }
