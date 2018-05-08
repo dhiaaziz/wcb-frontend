@@ -13,6 +13,9 @@ body, html {
     @extend %base-font;
     font-size: $font-size-base;
     // transition: 2000ms ease all;
+    @include for-size(phone-only){
+      font-size: $font-size-phone;
+    }
 }
 
 button:focus {outline:0;}

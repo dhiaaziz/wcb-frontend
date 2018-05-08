@@ -76,12 +76,11 @@
               }
             }
             .wcb-navbar-collapse{
-              @include for-size(tablet-portrait-down){
-                display:block;
-              }
               width: 100%;
               float: right;
               @include disp-flex;
+              transition: max-height 200ms ease-out;
+
               .header-items-link{
                 text-align: center;
                 // flex-basis: 200px;
@@ -106,9 +105,12 @@
                 @include for-size(tablet-portrait-down){
                   display:block !important;
                   width: 100%;
-                  padding: 10px;
+                  padding: 20px 0;
                   &:not(.items-kontak){
                     border-bottom: $border-mumtaz;
+                  }
+                  p{
+                    margin: 0;
                   }
                 }
               }
@@ -128,8 +130,14 @@
                   }
                 }
               }
+
               @include for-size(tablet-portrait-down){
-                // display: none;
+                display: block;
+                max-height: 0;
+                overflow: hidden;
+                &.show{
+                  // max-height: 100%; //moved to JS
+                }
               }
             }
             // End of Navbar-Collapse
