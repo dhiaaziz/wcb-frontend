@@ -81,6 +81,16 @@
   display: -moz-flex;
   display: flex;
 }
+
+@mixin disp-flex-important{
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+}
+
 @mixin flex-level($level){
   -webkit-box-flex: $level;
   // -moz-box-flex: $level;

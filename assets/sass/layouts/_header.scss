@@ -36,8 +36,20 @@
             max-height: 39px;
             max-width: 100%;
           }
+          @include for-size(tablet-portrait-down){
+            width: auto;
+            padding: 20px 0;
+          }
+        }
+        //End of logo-company-container
+        @include for-size(tablet-portrait-down){
+          // @include disp-flex-important;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
         }
       }
+      //End of Box Left
 
       .box-right{
         position:relative;
@@ -48,51 +60,120 @@
           float: right;
           height: 100%;
           width: 95%;
-          // overflow-x:hidden;
-
+          //flex
           @include disp-flex;
           justify-content: space-between;
           align-items: center;
-          div:not(.dropdown-content){
-            @extend %header-items;
-            input{
-              position: relative;
-              top: 28%;
-            }
 
-          }
-          .header-items-link{
-            text-align: center;
-            // flex-basis: 200px;
-            flex-grow: 1;
-            @extend %header-items;
-            @extend %header-items-link;
-            cursor: pointer;
-            &.dropdown-wcb{
-              // flex-grow: 3;
-            }
-            p, span{
-              position: relative;
-              top: 36%;
-            }
-            &:hover{
-              background-color: $header-hover-bg_color;
-              .icons-dropdown{
-                transform: rotate(180deg);
-                transition: 200ms ease all;
+            div:not(.dropdown-content){
+              @extend %header-items;
+              input{
+                position: relative;
+                top: 28%;
               }
             }
-          }
-          .form-control-header{
-            width: $header-search-width;
-            margin-left: 5px;
-          }
+            .wcb-navbar-collapse{
+              @include for-size(tablet-portrait-down){
+                display:block;
+              }
+              width: 100%;
+              float: right;
+              @include disp-flex;
+              .header-items-link{
+                text-align: center;
+                // flex-basis: 200px;
+                flex-grow: 1;
+                @extend %header-items;
+                @extend %header-items-link;
+                cursor: pointer;
+                &.dropdown-wcb{
+                  // flex-grow: 3;
+                }
+                p, span{
+                  position: relative;
+                  top: 36%;
+                }
+                &:hover{
+                  background-color: $header-hover-bg_color;
+                  .icons-dropdown{
+                    transform: rotate(180deg);
+                    transition: 200ms ease all;
+                  }
+                }
+                @include for-size(tablet-portrait-down){
+                  display:block !important;
+                  width: 100%;
+                  padding: 10px;
+                  &:not(.items-kontak){
+                    border-bottom: $border-mumtaz;
+                  }
+                }
+              }
+              //End of header-items-link
+              .form-control-header{
+                width: $header-search-width;
+                margin-left: 5px;
 
+                @include for-size(tablet-portrait-down){
+                  @include disp-flex;
+                  width: 100%;
+                  margin: 0;
+                  input{
+                    width: 50%;
+                    display: inline-block;
+                    margin: 0 auto;
+                  }
+                }
+              }
+              @include for-size(tablet-portrait-down){
+                // display: none;
+              }
+            }
+            // End of Navbar-Collapse
+
+            @include for-size(tablet-portrait-down){
+              // display: none;
+              width: 100%;
+            }
+          }
+          // End of items-container-right
+          @include for-size(tablet-portrait-down){
+            display:block !important;
+            width: 100%;
+          }
+        }
+        // End of box-right
+
+        @include for-size(tablet-portrait-down){
+          display:block !important;
+          width: 100%;
         }
       }
-    }
+      // End of header-main
 
+      @include for-size(tablet-portrait-down){
+        height: auto;
+      }
 }
+// End header
+
+.wcb-navbar-toggler{
+  display:none;
+  border: 0;
+  color: $header-button-color;
+  background: transparent;
+  i{
+    font-size: 2.5em;
+    // vertical-align:
+  }
+  @include for-size(tablet-portrait-down){
+    display:initial;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+}
+
 
 input.bordered-circle{
   @extend %input-border ;
