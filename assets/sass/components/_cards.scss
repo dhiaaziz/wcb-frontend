@@ -126,6 +126,13 @@
   .card-desc-left {
     padding-right: 4%;
     text-align: right;
+    @include for-size(tablet-portrait-down){
+      // background-color: rgb(72, 111, 75);
+      text-align: left;
+      order: 2;
+      padding-right: 0;
+      padding-left:4%;
+    }
 
   }
   .card-desc-right {
@@ -135,5 +142,9 @@
   }
   &:hover{
     background-color: $card-color-hover;
+  }
+
+  @include for-size(tablet-portrait-down){
+    font-size: 1.15rem;
   }
 }
