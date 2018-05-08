@@ -5,10 +5,14 @@
 
 .beranda-background-container{
   @include bg-img('../img/profil.jpg',$size: cover , $position:center);
-  @extend %height-100;
+  height: 100%;
   // height: 700px
   @include box-shadow(4);
   // background-origin: content-box;
+  @include for-size(phone-only){
+    height: 252px;
+    margin-bottom: 20px;
+  }
 }
 
 .beranda-content-container{

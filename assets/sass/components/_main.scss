@@ -42,6 +42,7 @@ h6{
   font-size: $font-size-h6;
 }
 
+
 a{
   @extend %non-decorated-link;
   &:hover{
@@ -150,6 +151,14 @@ a{
   h1, h2, h3, h4, h5, h6, p{
     font-weight: bolder;
   }
+  @include for-size(phone-only){
+    text-align: center;
+    margin: 0;
+    h1, h2, h3, h4, h5, h6{
+      font-size: 1.5rem;
+    }
+
+  }
 }
 .section-content{
   margin: 60px 0 0;
@@ -190,4 +199,11 @@ a{
 }
 .text-grey{
   color: $grey-400;
+}
+
+.row{
+  margin-top: 40px;
+  @include for-size(phone-only){
+    margin-top: 20px;
+  }
 }
