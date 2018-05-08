@@ -116,6 +116,7 @@
               }
               //End of header-items-link
               .form-control-header{
+                order: 2;
                 width: $header-search-width;
                 margin-left: 5px;
 
@@ -123,6 +124,7 @@
                   @include disp-flex;
                   width: 100%;
                   margin: 0;
+                  margin-bottom: 1.5em;
                   input{
                     width: 50%;
                     display: inline-block;
@@ -137,6 +139,8 @@
                 overflow: hidden;
                 &.show{
                   // max-height: 100%; //moved to JS
+                  overflow: scroll;
+
                 }
               }
             }
@@ -178,18 +182,24 @@
   border: 0;
   color: $header-button-color;
   background: transparent;
-  i{
+  i.material-icons{
     font-size: 2.5em;
     // vertical-align:
+    @include for-size(phone-only){
+      font-size: 2em;
+    }
   }
   @include for-size(tablet-portrait-down){
     display:initial;
     position: absolute;
     right: 10px;
-    top: 18px;
+    top: 15px;
+  }
+  @include for-size(phone-only){
+    top: 22px;
   }
   @include for-size(phone-400){
-    top: 14px;
+    top: 18px;
   }
 }
 

@@ -1,8 +1,3 @@
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
-}
-
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 a, a:hover {
   text-decoration: none;
@@ -240,6 +235,7 @@ body, html {
 
 /* line 118, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
 #header .header-main .box-right .items-container-right .wcb-navbar-collapse .form-control-header {
+  order: 2;
   width: 248px;
   margin-left: 5px;
 }
@@ -255,8 +251,9 @@ body, html {
     display: flex;
     width: 100%;
     margin: 0;
+    margin-bottom: 1.5em;
   }
-  /* line 126, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+  /* line 128, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
   #header .header-main .box-right .items-container-right .wcb-navbar-collapse .form-control-header input {
     width: 50%;
     display: inline-block;
@@ -270,6 +267,10 @@ body, html {
     display: block;
     max-height: 0;
     overflow: hidden;
+  }
+  /* line 140, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+  #header .header-main .box-right .items-container-right .wcb-navbar-collapse.show {
+    overflow: scroll;
   }
 }
 
@@ -310,7 +311,7 @@ body, html {
   }
 }
 
-/* line 176, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+/* line 180, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
 .wcb-navbar-toggler {
   display: none;
   border: 0;
@@ -318,40 +319,54 @@ body, html {
   background: transparent;
 }
 
-/* line 181, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
-.wcb-navbar-toggler i {
+/* line 185, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+.wcb-navbar-toggler i.material-icons {
   font-size: 2.5em;
 }
 
+@media (max-width: 599px) {
+  /* line 185, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+  .wcb-navbar-toggler i.material-icons {
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 900px) {
-  /* line 176, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+  /* line 180, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
   .wcb-navbar-toggler {
     display: initial;
     position: absolute;
     right: 10px;
-    top: 18px;
+    top: 15px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* line 180, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+  .wcb-navbar-toggler {
+    top: 22px;
   }
 }
 
 @media (max-width: 401px) {
-  /* line 176, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+  /* line 180, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
   .wcb-navbar-toggler {
-    top: 14px;
+    top: 18px;
   }
 }
 
-/* line 200, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+/* line 210, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
 .dropdown-wcb {
   position: relative;
   display: inline-block;
 }
 
-/* line 204, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+/* line 214, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
 .dropdown-wcb:hover .dropdown-content {
   display: block;
 }
 
-/* line 211, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+/* line 221, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
 .dropdown-content {
   text-align: left;
   display: none;
@@ -368,7 +383,7 @@ body, html {
   font-size: 1.25rem;
 }
 
-/* line 225, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+/* line 235, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -376,14 +391,9 @@ body, html {
   display: block;
 }
 
-/* line 230, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
+/* line 240, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/layouts/_header.scss */
 .dropdown-content a:hover {
   background-color: #eeeeee;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -538,11 +548,6 @@ textarea, input, button {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -849,11 +854,6 @@ a:hover {
   color: #bdbdbd;
 }
 
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
-}
-
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 a, a:hover {
   text-decoration: none;
@@ -950,11 +950,6 @@ body, html {
 /* line 21, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_buttons.scss */
 .btn-circled {
   border-radius: 36px;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -1207,11 +1202,6 @@ body, html {
   background-color: #eeeeee;
 }
 
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
-}
-
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 a, a:hover {
   text-decoration: none;
@@ -1400,11 +1390,6 @@ body, html {
   text-decoration: underline;
 }
 
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
-}
-
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 a, a:hover {
   text-decoration: none;
@@ -1518,11 +1503,6 @@ body, html {
 /* line 35, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/components/_inputs.scss */
 .form-group-mumtaaz textarea.form-mumtaaz-control {
   height: 72px;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -1669,11 +1649,6 @@ body, html {
   float: left;
 }
 
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
-}
-
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 a, a:hover {
   text-decoration: none;
@@ -1771,19 +1746,27 @@ body, html {
 
 /* line 18, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .beranda-content-text {
+  font-size: 20px;
   word-break: break-word;
   text-align: justify;
   hyphens: auto;
   margin-bottom: 60px;
 }
 
-/* line 26, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+@media (max-width: 599px) {
+  /* line 18, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+  .beranda-content-text {
+    font-size: 16px;
+  }
+}
+
+/* line 30, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .beranda-button-overlap {
   position: absolute;
   bottom: -85px;
 }
 
-/* line 31, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 35, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .container-card-lingkup {
   max-height: 700px;
   display: flex;
@@ -1793,7 +1776,7 @@ body, html {
   text-align: center;
 }
 
-/* line 40, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 44, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .container-card-lingkup .bulet-bulet {
   position: absolute;
   top: 10%;
@@ -1803,13 +1786,13 @@ body, html {
   background-color: #f99832;
 }
 
-/* line 41, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 45, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .container-card-lingkup .bulet-bulet::before {
   content: '\26AC';
   font-size: 5rem;
 }
 
-/* line 59, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 63, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .section-full_page_bg .beranda-the-background {
   background-image: url("../img/beranda-top.jpg");
   background-position: 0 0;
@@ -1821,13 +1804,13 @@ body, html {
   filter: brightness(40%);
 }
 
-/* line 67, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 71, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 .beranda-ukuran-card {
   width: 44%;
   margin: 10px;
 }
 
-/* line 73, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 77, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer {
   background-color: #ffffff;
   padding: 50px 0 30px;
@@ -1835,80 +1818,75 @@ body, html {
   font-size: 1.15rem;
 }
 
-/* line 79, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 83, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .footer-main_heading {
   font-weight: bold;
 }
 
-/* line 82, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 86, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer img {
   max-width: 500px;
   margin: 80px 0;
 }
 
-/* line 86, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 90, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .section-footer {
   width: 40%;
   margin: 0 auto;
 }
 
-/* line 89, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 93, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .section-footer h1, #beranda-footer .section-footer h2, #beranda-footer .section-footer h3, #beranda-footer .section-footer h4, #beranda-footer .section-footer h5, #beranda-footer .section-footer h6 {
   margin-bottom: 20px;
 }
 
-/* line 94, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 98, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer li {
   list-style: none;
   display: inline;
 }
 
-/* line 97, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 101, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer li::after {
   content: '|';
   margin-left: 4px;
 }
 
-/* line 101, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 105, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer li:last-child:after {
   content: '';
 }
 
-/* line 106, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 110, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer a:hover {
   color: #2196f3;
 }
 
-/* line 110, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 114, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .kantor-perwakilan {
   width: 50%;
 }
 
-/* line 114, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 118, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .footer-separator {
   margin: 50px auto 30px;
   width: 20%;
   border-bottom: 1px solid black;
 }
 
-/* line 120, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 124, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .footer-copyright {
   margin-top: 70px;
 }
 
-/* line 122, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 126, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .footer-copyright p {
   margin-bottom: 5px;
 }
 
-/* line 126, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
+/* line 130, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/pages/_beranda.scss */
 #beranda-footer .link-developer {
   color: #2196f3;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -1997,11 +1975,6 @@ body, html {
   background-size: cover;
   background-origin: content-box;
   filter: brightness(40%);
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -2101,11 +2074,6 @@ body, html {
 .kontak-button-overlap {
   position: absolute;
   bottom: -132px;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -2259,11 +2227,6 @@ ul.certification-list li:not(:last-child) {
   font-weight: bolder;
 }
 
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
-}
-
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 a, a:hover {
   text-decoration: none;
@@ -2391,11 +2354,6 @@ body, html {
   margin: 0;
 }
 
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
-}
-
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
 a, a:hover {
   text-decoration: none;
@@ -2484,11 +2442,6 @@ body, html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
@@ -2586,11 +2539,6 @@ body, html {
   width: 100%;
   max-height: 100%;
   margin: auto;
-}
-
-/* line 6, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */
-.beranda-content-text {
-  font-size: 20px;
 }
 
 /* line 14, /Users/dhiaaziz/Documents/kerja/admin-company/frontEndComp/assets/sass/helpers/_helpers.scss */

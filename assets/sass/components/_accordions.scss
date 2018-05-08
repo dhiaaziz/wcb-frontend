@@ -31,7 +31,7 @@
     }
     button.active{
       @extend %btn-mumtaaz-active_n_hover;
-      &:after{;
+      &:after{
         content: '\2212';
       }
     }
@@ -45,7 +45,7 @@
       border-left:  $border-mumtaz;
       border-right:  $border-mumtaz;
       border-bottom:  $border-mumtaz;
-      
+
       table{
         //biar full
         width: 100.1%;

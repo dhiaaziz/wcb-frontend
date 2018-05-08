@@ -36,15 +36,17 @@ $( document ).ready(function() {
     $('.wcb-navbar-toggler').on('click', function(){
       navbar_collapse = $('.wcb-navbar-collapse');
       navbar_collapse_height = navbar_collapse.prop("scrollHeight");
-      console.log(navbar_collapse_height);
+      // console.log(navbar_collapse_height);
       if(navbar_collapse.hasClass("show")){
         $('.wcb-navbar-collapse').removeClass("show");
         navbar_collapse.css("max-height",0);
+        $(this).find('.material-icons').text("menu");
       }
       else{
         $('.wcb-navbar-collapse').addClass("show");
         navbar_collapse.css("max-height",navbar_collapse_height+1);
-
+        $(this).find('.material-icons').text("close");
+        
       }
     });
 

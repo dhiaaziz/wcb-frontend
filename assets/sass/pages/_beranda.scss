@@ -16,11 +16,15 @@
 }
 
 .beranda-content-text{
-  @extend %font-content-beranda;
+  // @extend %font-content-beranda;
+  font-size: $font-size-beranda;
   word-break: break-word;
   text-align: justify;
   hyphens:auto; //striep untuk lanjut kata
   margin-bottom: 60px;
+  @include for-size(phone-only){
+    font-size: $font-size-phone;
+  }
 }
 
 .beranda-button-overlap{
