@@ -35,6 +35,9 @@
             vertical-align: middle;
             max-height: 39px;
             max-width: 100%;
+            @include for-size(phone-400){
+              max-height: 30px;
+            }
           }
           @include for-size(tablet-portrait-down){
             width: auto;
@@ -154,6 +157,11 @@
       @include for-size(tablet-portrait-down){
         height: auto;
       }
+
+      @include for-size(phone-only){
+        height: auto;
+        // width: auto;
+      }
 }
 // End header
 
@@ -171,6 +179,9 @@
     position: absolute;
     right: 10px;
     top: 18px;
+  }
+  @include for-size(phone-400){
+    top: 14px;
   }
 }
 
