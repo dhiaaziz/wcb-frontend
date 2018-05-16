@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main-style.css">
 
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/normalize.css"> -->
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
 
   </head>
@@ -25,44 +27,50 @@
             <span class="middle-helper"></span>
             <a href="home.html"><img src="assets/img/logo.png" alt=""></a>
           </div>
+          <button style="" type="button" class="wcb-navbar-toggler">
+            <span><i class="material-icons">menu</i></span>
+          </button>
         </div>
         <div class="box-right">
           <div class="items-container-right">
-            <a href="home.html" class="header-items-link"><p>BERANDA</p></a>
-            <div class="header-items-link dropdown-wcb">
-              <p>TENTANG KAMI <span class="icons-dropdown"></span></p>
-              <div class="dropdown-content">
-                <a href="profil.html">Profil Perusahaan</a>
-                <a href="struktur.html">Struktur Organisasi</a>
-                <a href="sertifikasi.html">Sertifikasi & Kompetensi</a>
-                <a href="legalisasi.html">Legalitas</a>
-                <a href="tim.html">Tim Ahli</a>
+            <div class="wcb-navbar-collapse">
+              <div class="form-control-header">
+                <input class="bordered-circle" placeholder="Pencarian" type="text" name="" value="">
               </div>
-            </div>
-            <div class="header-items-link dropdown-wcb">
-              <p>BISNIS <span class="icons-dropdown"></span></p>
-              <div class="dropdown-content">
-                <a href="lingkup.html">Lingkup Pekerjaan</a>
-                <a href="partner.html">Partner</a>
+              <a href="home.html" class="header-items-link"><p>BERANDA</p></a>
+              <div class="header-items-link dropdown-wcb">
+                <p>TENTANG KAMI <span class="icons-dropdown"></span></p>
+                <div class="dropdown-content">
+                  <a href="profil.html">Profil Perusahaan</a>
+                  <a href="struktur.html">Struktur Organisasi</a>
+                  <a href="sertifikasi.html">Sertifikasi & Kompetensi</a>
+                  <a href="legalisasi.html">Legalitas</a>
+                  <a href="tim.html">Tim Ahli</a>
+                </div>
               </div>
-            </div>
-            <div class="header-items-link dropdown-wcb">
-              <p>PROYEK <span class="icons-dropdown"></span></p>
-              <div class="dropdown-content">
-                <a href="galeri.html">Galeri</a>
-                <a href="pengalaman.html">Pengalaman</a>
-                <a href="portofolio.html">Portofolio</a>
-                <a href="peraturan.html">Peraturan Lingkungan Hidup</a>
+              <div class="header-items-link dropdown-wcb">
+                <p>BISNIS <span class="icons-dropdown"></span></p>
+                <div class="dropdown-content">
+                  <a href="lingkup.html">Lingkup Pekerjaan</a>
+                  <a href="partner.html">Partner</a>
+                </div>
               </div>
-            </div>
-            <a href="kontak.html" class="header-items-link"><p>KONTAK </p></a>
-            <div class="form-control-header">
-              <input class="bordered-circle" placeholder="Pencarian" type="text" name="" value="">
+              <div class="header-items-link dropdown-wcb">
+                <p>PROYEK <span class="icons-dropdown"></span></p>
+                <div class="dropdown-content">
+                  <a href="galeri.html">Galeri</a>
+                  <a href="pengalaman.html">Pengalaman</a>
+                  <!-- <a href="portofolio.html">Portofolio</a> -->
+                  <a href="peraturan.html">Peraturan Lingkungan Hidup</a>
+                </div>
+              </div>
+              <a href="kontak.html" class="header-items-link items-kontak"><p>KONTAK </p></a>
             </div>
           </div>
         </div>
       </div>
     </header>
+    
     <section id="section-top-pushed" class="section-no_full_page_no_bg">
       <div class="container-wcb">
 
@@ -78,7 +86,9 @@
             <div class="row">
               <div class="col-md-3 col-6 ">
                 <div class="box-img">
-                  <img src="assets/img/sertifikasi-foto.jpeg" alt="">
+                  <a class="test-popup-link" href="assets/img/sertifikasi-foto.jpeg">
+                    <img src="assets/img/sertifikasi-foto.jpeg" alt="">
+                  </a>
                 </div>
               </div>
               <div class="col-md-3 col-6">
@@ -187,5 +197,15 @@
   <!-- <script type="text/javascript" src="vendor/material-kit/assets/js/material-kit.min.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script> -->
   <script type="text/javascript" src="assets/js/main-front.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.test-popup-link').magnificPopup({
+          type: 'image'
+        // other options
+        });
+    });
+  </script>
 
 </html>
